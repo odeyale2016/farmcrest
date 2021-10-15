@@ -1,38 +1,663 @@
-.App {
+body {
+  position: relative;
+  width: 1366px;
+  height: 2732px;
+  
+    margin: 0;
+     
+    background-color: var(--background_color_two);
+    overflow-x: hidden;
+  }
+
+  .header{
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    position: absolute;
+    width: 217px;
+    height: 150px;
+    left: 100px;
+    top: -1px;
+    
+  }
+  nav ul{
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  nav ul li{
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    
+    text-decoration: none;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+     
+    color: #336600;	 
+  }
+  nav ul li:hover{
+    background-color: #336600;
+    transition: 0.9s;
+    color: #ffffff;
+    width: auto;
+  }
+   
+  .btn-login {
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    left: 1043px;
+    top: 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #336600;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 20px;
+   
+  }
+  .login-text{
+   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 12px;
+    /* identical to box height, or 80% */
+    color: #336600;
+  }
+  .btn-signup{
+    position: absolute;
+    width: 98px;
+    height: 35px;
+    left: 1168px;
+    top: 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     
+    box-sizing: border-box;
+     padding: 10px 20px;
+    
+    background: #336600;
+    border-radius: 3px;
+   
+     
+  }
+  .signup-text{
+  
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 12px;
+    /* identical to box height, or 80% */
+  
+  
+    color: #FFFFFF;
+  
+  }
+ 
+  .slider{
+    position: absolute;
+    width: 1366px;
+    height: 519px;
+    left: 0px;
+    top: 89px;
+  
+     
+  }
+  .img-responsive {
+     
+    height: auto;
+    }
+  .title{
+    position: absolute;
+    width: 503px;
+    height: 116px;
+    left: 100px;
+    top: 160px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 48px;
+    /* or 69% */
+  
+  
+    color: #FFFFFF;
+  }
+  .subcontent{
+    position: absolute;
+    width: 475px;
+    height: 56px;
+    left: 100px;
+    top: 280px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+  
+    color: #FFFFFF;
+  }
+  
+  .button{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 100px;
+    top: 350px;
+  
+    background: #336600;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     
+    box-sizing: border-box;
+     padding: 10px 20px;
+  }
+  .text-read{
+     
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height, or 100% */
+  
+  
+    color: #FFFFFF;
+  }
+  .body-content{
+    position: absolute;
+    width: 733px;
+    height: 40px;
+    left: 317px;
+    top: 660px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+  
+    text-align: center;
+  
+    color: #336600;
+  
+  }
+  .line-text{
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    left: 633px;
+    top: 750px;
+  
+    background: #24FF00;
+  }
+  .inner-text{
+    position: absolute;
+    width: 796px;
+    height: 96px;
+    left: 336px;
+    top: 800px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  /* or 133% */
+  
+    text-align: center;
+  
+    color: #1E392C;
+  
+  }
+  .bg-building{
+    position: absolute;
+    width: 1366px;
+    height: 519px;
+    left: 0px;
+    top: 979px;
+  
+  }
+  .fintech-title{
+    position: absolute;
+    width: 900px;
+    height: 519px;
+    left: 60px;
+    top: 1250px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .bg-building2{
+    position: absolute;
+    width: 790px;
+    height: 550px;
+    left: 100px;
+    top: 1622px;
+  
+  
+  }
+
+  .prop{
+    position: absolute;
+    width: 376px;
+    height: 550px;
+    left: 890px;
+    top: 1622px;
+  
+    background: #336600;
+  }
+  .prop-title{
+    position: absolute;
+    width: 329px;
+    height: 120px;
+    left: 914px;
+    top: 1692px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    /* or 111% */
+  
+  
+    color: #FFFFFF;
+  }
+  .prop-line{
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    left: 914px;
+    top: 1852px;
+  
+    background: #FFFFFF;
+  }
+  .prop-text{
+    position: absolute;
+    width: 303px;
+    height: 120px;
+    left: 914px;
+    top: 1897px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 150% */
+  
+  
+  color: #FFFFFF;
+  }
+  .prop-btn{
+    position: absolute;
+    width: 158px;
+    height: 45px;
+    left: 914px;
+    top: 2057px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: #FFE600;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 7px 15px;
+  
+  }
+  .prop-btn-text{
+     
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+  
+    color: #000000;
+  
+  }
+
+  .transparent-back{
+    /* Rectangle 16 */
+  
+  position: absolute;
+  width: 1366px;
+  height: 364px;
+  left: 0px;
+  top: 2241px;
+  
+  
+  
+  }
+  .transparent-content{
+    position: absolute;
+    width: 864px;
+    height: 156px;
+    left: 250px;
+    top: 2299px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+  
+    text-align: center;
+  
+    color: #FFFFFF;
+  
+  
+  }
+  
+  .transparent-content p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+  
+    text-align: center;
+  
+    color: #FFFFFF;
+  }
+  .transparent-signup{
+    position: absolute;
+    width: 158px;
+    height: 45px;
+    left: 604px;
+    top: 2500px;
+  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: #FFE600;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 7px 15px;
+  }
+  .transparent-signup-text{
+     
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+  
+  
+    color: #000000;
+  
+  }
+  .as-seen-on{
+    /* As seen on */
+  
+  
+  position: absolute;
+  width: 128px;
+  height: 28px;
+  left: 229px;
+  top: 2655px;
+  
+  font-family: Avenir LT Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 28px;
+  /* identical to box height, or 112% */
+  
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+  color: #000000;
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .punch{
+    /* image 2 */
+  
+  
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 417px;
+    top: 2655px;
+  
+   
   }
-  to {
-    transform: rotate(360deg);
+  .finance{
+    /* image 3 */
+  
+  
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 677px;
+    top: 2655px;
+  
+    
   }
-}
+  .linkedn{
+      /* image 4 */
+  
+  
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 937px;
+    top: 2655px;
+  
+  }
+
+  .footer{
+    position: absolute;
+  width: 1366px;
+  height: 290px;
+  left: -1px;
+  top: 2757px;
+  
+  background: #336600;
+  }
+  .img-nibbs{
+    /* image 2 */
+  position: absolute;
+  width: 156.92px;
+  height: 47.08px;
+  left: 101px;
+  top: 2797px;
+  
+   
+  border-radius: 3.9231px;
+  }
+  .img-oldmutual-1{
+    /* image 3 */
+  
+  
+  position: absolute;
+  width: 207.22px;
+  height: 46.22px;
+  left: 277px;
+  top: 2797px;
+  
+  
+  border-radius: 3.85176px;
+  }
+  .img-xds{
+    /* image 4 */
+  
+  
+  position: absolute;
+  width: 115.55px;
+  height: 46.22px;
+  left: 101px;
+  top: 2864.08px;
+  
+  border-radius: 3.85176px;
+  }
+  .img-travelstart{
+    /* image 6 */
+  
+  
+    position: absolute;
+    width: 214.93px;
+    height: 46.22px;
+    left: 236.55px;
+    top: 2864.08px;
+  
+     
+    border-radius: 3.85176px;
+  }
+  .img-trapezoid{
+    /* image 7 */
+  
+  
+    position: absolute;
+    width: 214.93px;
+    height: 46.22px;
+    left: 101px;
+    top: 2964.08px;
+  
+    
+    border-radius: 3.85176px;
+  }
+  .img-meritabode{
+    /* image 5 */
+  
+  
+    position: absolute;
+    width: 45.45px;
+    height: 46.22px;
+    left: 335.93px;
+    top: 2964.08px;
+  
+   
+    border-radius: 3.85176px;
+  }
+  .footer-address{
+    /* Email: info@stewardafrica.org.ng Address: 1, Adekunle Owobiyi Close, Off Oladele Kadiri Close, Off Nob-Oluwa Street, (adjacent Babcock University Schools), Ogba, Lagos. */
+  
+  
+    position: absolute;
+    width: 557px;
+    height: 96px;
+    left: 709px;
+    top: 2797px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+  
+  
+    color: #FFFFFF;
+  
+  }
+  .footer-icons1{
+    position: absolute;
+    width: 51.7px;
+    height: 51.7px;
+    left: 709px;
+    top: 2964.08px;
+  }
+  .footer-icons2{
+    position: absolute;
+    width: 51.7px;
+    height: 51.7px;
+    left: 790px;
+    top: 2964.08px;
+  }
+  .footer-icons3{
+    position: absolute;
+    width: 51.7px;
+    height: 51.7px;
+    left: 880px;
+    top: 2964.08px;
+  }
+  .footer-icons4{
+    position: absolute;
+    width: 51.7px;
+    height: 51.7px;
+    left: 970px;
+    top: 2964.08px;
+  } 
+  .footer-icons5{
+    position: absolute;
+    width: 51.7px;
+    height: 51.7px;
+    left: 1060px;
+    top: 2964.08px;
+  }
+  
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+    
+  }
+  .header{
+    width: 100%;
+    background-color: red;
+  }
+  .logo{
+    position: absolute;
+      width: 117px;
+      height: 85px;
+      left: 280px;
+      top: 10px;
+      
+  }
+  .logo img{
+    width: 70%;
+  }
+  nav ul{
+    height: 330px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .btn-login{
+    top: 300px;
+    left: 280px;
+  }
+  .btn-signup{
+    top: 350px;
+    left: 280px;
+  }
+  .slider{
+    top: 390px;
+    width: 768px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  }
