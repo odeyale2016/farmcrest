@@ -1,11 +1,13 @@
 //import logo from './logo.svg';
-import {BrowserRouter, Link, Switch, Route} from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import AboutPage from './components/About/AboutPage';
+import About from './components/About/About';
 import Services  from './components/Services/Services';
 import Products from './components/Products/Products';
-//import Contact from 'components/Contact/Contact';
+import Contacts from './components/Contacts/Contacts';
+import Login from './components/Forms/Login';
+import Signup from './components/Forms/Signup';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
@@ -13,16 +15,16 @@ import Footer from './components/Footer';
 function App() {
   return (
      <div>
-      
-      <BrowserRouter>
       <Header />
+     
+      
       
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <MainContent />
           </Route>
-          <Route path="/aboutpage">
-            <AboutPage />
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/services">
             <Services />
@@ -30,9 +32,18 @@ function App() {
           <Route path="/products">
             <Products />
           </Route>
-        
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <Signup />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
+          </Route>
+          
         </Switch>
-      </BrowserRouter>
+      
       <Footer />
        </div>
   );
