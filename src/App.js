@@ -5,6 +5,8 @@ import './App.css';
 import About from './components/About/About';
 import Services  from './components/Services/Services';
 import Products from './components/Products/Products';
+import Maize from './components/Products/Maize';
+import Cassava from './components/Products/Cassava';
 import Contacts from './components/Contacts/Contacts';
 import Login from './components/Forms/Login';
 import Signup from './components/Forms/Signup';
@@ -29,7 +31,7 @@ function App() {
           <Route path="/services">
             <Services />
           </Route>
-          <Route path="/products">
+          <Route exact path="/products">
             <Products />
           </Route>
           <Route path="/login">
@@ -41,7 +43,12 @@ function App() {
           <Route path="/contacts">
             <Contacts />
           </Route>
-          
+          <Route  path="/products/maize">
+            <Maize />
+          </Route>
+          <Route  path="/products/cassava">
+            <Cassava />
+          </Route>
         </Switch>
       
       <Footer />

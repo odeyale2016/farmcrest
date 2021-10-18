@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
+//import {useParams} from 'react-router-dom';
+import Maize from './Maize';
+import Cassava from './Cassava';
+ 
 class Products extends React.Component {
     render() { 
+		
         return <div>
          <div className="slider">
 				<div className="inner">
@@ -10,6 +15,8 @@ class Products extends React.Component {
                           
 						<div className="title">
 							 Our Products
+							  
+							 
 						</div>
 						 
 						 
@@ -46,8 +53,8 @@ class Products extends React.Component {
 				<div className="prop-line"></div>
 				<div className="prop-text">
                 <ul>
-					<li><Link to="/products?type=maize">Maize</Link></li>
-					<li>Cassava</li>
+					<li><Link to="/products/maize">Maize</Link></li>
+					<li><Link to="/products/cassava">Cassava</Link></li>
 					<li>Pepper</li>
 					<li>Potatoe</li>
 					<li>Beans</li>

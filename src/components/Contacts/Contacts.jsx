@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 class Contacts extends React.Component {
     render() { 
-        return <div>  <div className="slider">
-        <div className="inner">
-            <div className="slider-content">
+        return <div>  
+                     <div className="slider">
+                    <div className="inner">
+                    <div className="slider-content">
                   <img src={`/Contacts.png`} alt="slider-1" className="img-responsive" />
                   
                 <div className="title">

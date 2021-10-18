@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Clock from '../Clock';
 class Login extends React.Component {
     render() { 
-        return <div><h3>Login</h3></div>;
+        return <div><h3><Clock /></h3></div>;
     }
 }
  
